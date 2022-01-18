@@ -35,12 +35,12 @@ jobs:
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
-      run: rm -rf spike-2/public
+      run: rm -rf badi-bot/public
 
     # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
     - name: Build
-      run: cd spike-2 && hugo --minify
+      run: cd badi-bot && hugo --minify
 
     # Step 5 - Create name file
     #- name: Create cname file
@@ -48,11 +48,11 @@ jobs:
 
     # Step 6 - Add the .nojekyll file to stop jekyll from running
     - name: Create .nojekyll file
-      run: touch spike-2/public/.nojekyll
+      run: touch badi-bot/public/.nojekyll
 
     # Step 7 - Push our generated site to our gh-pages branch
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: spike-2/public
+          publish_dir: badi-bot/public
