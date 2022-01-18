@@ -1,0 +1,51 @@
+{{ define "main" }}
+  <main class="post">
+
+    <article>
+      <h1 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+      </h1>
+
+      <h1 class="post-title">
+        <a href="{{ .Permalink }}">{{ dateFormat "January 2, 2006" .Date }}</a>
+      </h1>
+
+
+      {{ with .Params.Description }}
+        <div class="post-excerpt">{{ . }}</div>
+      {{ end }}
+
+      {{ if .Params.Cover }}
+        <figure class="post-cover">
+          <img src="{{ .Params.Cover | absURL }}" alt="{{ .Title }}" />
+          
+          {{ if .Params.CoverCaption }}
+            <figcaption class="center">{{ .Params.CoverCaption | markdownify }}</figcaption>
+          {{ end }}
+        </figure>
+      {{ end }}
+
+      {{- if and (.Params.toc) (ne "<nav id=\"TableOfContents\"></nav>" .TableOfContents) }}
+        <hr />
+        <aside id="toc">
+          <div class="toc-title">{{ i18n "tableOfContents" }}</div>
+          {{ .TableOfContents }}
+        </aside>
+        <hr />
+      {{- end }}
+
+      {{ if .Params.Audio }}
+        <div class="post-audio">
+          <audio controls>
+            <source src="{{ .Params.Audio }}">
+          </audio>
+        </div>
+      {{ end }}
+
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+    </article>
+
+  </main>
+{{ end }}

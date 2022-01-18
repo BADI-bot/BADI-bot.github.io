@@ -1,0 +1,58 @@
+baseurl: "https://badi-bot.github.io/"
+title: Bourne Again Discord Interface (BADI)
+author: 
+  name: BADI Maintainers
+languageCode: en-us
+theme: hello-friend-ng
+style:
+  - css/custom.css
+readOtherPosts: Read other posts
+markup:
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    h1_lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: true
+    style: vim
+    tabWidth: 4
+permalinks:
+  changelog: /changelog/:2006-:01-:02/
+params:
+  dateform: 'Jan 2, 2006'
+  dateformShort: Jan 2
+  dateformNum: '2006-01-02'
+  dateformNumTime: '2006-01-02 15:04'
+  homeSubtitle: A Shell for Discord
+  disableReadOtherPosts: true
+  enableSharingButtons: false
+  enableThemeToggle: true
+  description: A Shell for Discord
+  keywords: 'discord, bot'
+  logo:
+    logoText: BADI-bot
+    logoHomeLink: /
+  images:
+    - ''
+  footer:
+    trademark: true
+    author: true
+    copyright: false
+    topText:
+      - <a target="_blank" href="https://github.com/BADI-bot">GitHub</a>
+paginate: 10
+taxonomies:
+  category: categories
+  tag: tags
+menu:
+  main:
+    - identifier: docs
+      name: Documentation
+      url: /docs
+    - identifier: changelog
+      name: Changelog
+      url: /changelog

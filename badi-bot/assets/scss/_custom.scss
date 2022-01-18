@@ -1,0 +1,32 @@
+$truman-purple: #510c76;
+
+.logo__cursor {
+  background: black;
+
+  @media (prefers-color-scheme: dark) {
+    background: white;
+  }
+  
+  [data-theme=dark] & {
+    background: white;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: black;
+  }
+
+  [data-theme=light] & {
+    background: black;
+  }
+
+}
+
+.post hr {
+  margin-top: 30px;
+}
+
+.content {
+  p, #welcome-to-the-badi-documentation {
+    align-self: flex-start;
+  }
+}
