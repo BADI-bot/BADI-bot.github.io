@@ -34,7 +34,7 @@ params:
   description: A Shell for Discord
   keywords: 'discord, bot'
   logo:
-    logoText: BADI-bot
+    logoText: BADI
     logoHomeLink: /
   images:
     - ''
