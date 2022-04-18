@@ -12,10 +12,6 @@ assignees: ''
 <!-- Notes like this are comments and won't appear in the report. -->
 <!-- WARNING: Make sure no sensitive info is included! -->
 
-**Acknowledgement of Repo**
-<!-- Check the box below to confirm -->
-- [ ] I understand that Issues filed in this repo are only for the [https://badi-bot.github.io](https://badi-bot.github.io) site.
-
 **Describe the bug**
 <!-- A clear, concise description of the bug -->
 
