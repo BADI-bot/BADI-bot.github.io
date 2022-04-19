@@ -1,7 +1,7 @@
-baseurl: "https://badi-bot.github.io/"
-title: Bourne Again Discord Interface (BADI)
+baseurl: "https://devcodeabode.github.io/"
+title: The Dev Code Abode
 author: 
-  name: BADI Maintainers
+  name: The Dev Code Abode Team
 languageCode: en-us
 theme: hello-friend-ng
 style:
@@ -27,14 +27,14 @@ params:
   dateformShort: Jan 2
   dateformNum: '2006-01-02'
   dateformNumTime: '2006-01-02 15:04'
-  homeSubtitle: A Shell for Discord
+  homeSubtitle: A Home for Code
   disableReadOtherPosts: true
   enableSharingButtons: false
   enableThemeToggle: true
-  description: A Shell for Discord
+  description: A Home for Code
   keywords: 'discord, bot'
   logo:
-    logoText: BADI
+    logoText: TDCA
     logoHomeLink: /
   images:
     - ''
@@ -43,16 +43,16 @@ params:
     author: true
     copyright: false
     topText:
-      - <a target="_blank" href="https://github.com/BADI-bot">GitHub</a>
+      - <a target="_blank" href="https://github.com/devcodeabode">GitHub</a>
 paginate: 10
 taxonomies:
   category: categories
   tag: tags
 menu:
   main:
-    - identifier: docs
-      name: Documentation
-      url: /docs
-    - identifier: changelog
-      name: Changelog
-      url: /changelog
+    - identifier: badi
+      name: BADI
+      url: /badi
+    - identifier: spike-3
+      name: Spike 3
+      url: /spike-3

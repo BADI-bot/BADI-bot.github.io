@@ -1,4 +1,4 @@
 dev:
-	cd badi-bot && hugo server --disableFastRender
+	cd devcodeabode && hugo server --disableFastRender
 devDrafts:
-	cd badi-bot && hugo server --disableFastRender -D
+	cd devcodeabode && hugo server --disableFastRender -D

@@ -1,5 +1,5 @@
-badi-bot/public
-badi-bot/resources/_gen/
+devcodeabode/public
+devcodeabode/resources/_gen/
 .DS_Store
 node_modules
 dist

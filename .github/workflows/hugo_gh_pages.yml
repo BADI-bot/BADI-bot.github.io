@@ -35,12 +35,12 @@ jobs:
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
-      run: rm -rf badi-bot/public
+      run: rm -rf devcodeabode/public
 
     # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
     - name: Build
-      run: cd badi-bot && hugo --minify
+      run: cd devcodeabode && hugo --minify
 
     # Step 5 - Create name file
     #- name: Create cname file
@@ -48,11 +48,11 @@ jobs:
 
     # Step 6 - Add the .nojekyll file to stop jekyll from running
     - name: Create .nojekyll file
-      run: touch badi-bot/public/.nojekyll
+      run: touch devcodeabode/public/.nojekyll
 
     # Step 7 - Push our generated site to our gh-pages branch
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: badi-bot/public
+          publish_dir: devcodeabode/public

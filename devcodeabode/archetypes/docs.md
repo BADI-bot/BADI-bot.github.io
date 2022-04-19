@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 draft: false
+type: docs
 categories:
     - Documentation
 tags:
