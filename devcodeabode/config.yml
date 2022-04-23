@@ -53,6 +53,6 @@ menu:
     - identifier: badi
       name: BADI
       url: /badi
-    - identifier: spike-3
-      name: Spike 3
-      url: /spike-3
+    - identifier: modibo
+      name: MoDiBo
+      url: /modibo

@@ -24,8 +24,8 @@ Hugo will try and figure out the content type based on the path. **If you are ad
 For your convenience, here are some sample commands:
 
 + Posts: `hugo new posts/title.md`
-+ Documentation: `hugo new -k docs spike-3/docs/manual-pages/plugin-name.md`
-+ Changelog: `hugo new -k changelog spike-3/changelog/year/mm-dd.md`
++ Documentation: `hugo new -k docs modibo/docs/manual-pages/plugin-name.md`
++ Changelog: `hugo new -k changelog modibo/changelog/year/mm-dd.md`
 + Redirect Links: `hugo new links/title.md`
 
 ## Notes About Building
