@@ -32,9 +32,9 @@ jobs:
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
-      run: rm -rf badi-bot/public
+      run: rm -rf devcodeabode/public
 
     # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
     - name: Build
-      run: cd badi-bot && hugo --minify
+      run: cd devcodeabode && hugo --minify
