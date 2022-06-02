@@ -20,6 +20,9 @@ markup:
     noClasses: true
     style: vim
     tabWidth: 4
+  goldmark:
+    renderer:
+      unsafe: true
 permalinks:
   changelog: /changelog/:2006-:01-:02/
 params:
